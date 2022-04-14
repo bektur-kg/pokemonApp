@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Pokemon App</title>
+		<link rel="stylesheet" href="./css/style.css" />
+		<link
+			rel="icon"
+			href="https://cdn.pixabay.com/photo/2019/11/27/14/06/pokemon-4657023_960_720.png"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=KoHo:wght@200;300;400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<header>
+			<div class="headerContainer">
+				<div class="headerNav">
+					<img
+						src="https://lh3.googleusercontent.com/3TSaKxXGo2wT0lu0AyNUBnkk6wkCC2AzOhJyy3JXIPm-AmZ1k9DSAroWeBUyePswCZSs5lVp3mPF7HzUpY9VPlyOV5eddITONINr3WSqLNLm=e365-w600"
+						alt="icon"
+					/>
+					<nav>
+						<ul class="navList">
+							<li><a href="#">seasons</a></li>
+							<li><a href="#">список лидеров</a></li>
+							<li><a href="#">ивенты</a></li>
+							<li><a href="#">новости</a></li>
+							<li><a href="#">поддержка</a></li>
+							<li><a href="#">активация предложения</a></li>
+						</ul>
+					</nav>
+					<select name="lang" id="lang">
+						<option value="ru">Russian</option>
+						<option value="en">English</option>
+					</select>
+				</div>
+			</div>
+			<div class="videoContainer">
+				<div class="headerBanner">
+					<video
+						class="video"
+						src="https://storage.googleapis.com/pgoblog/soa-2022/M4199_Poke%CC%81mon%20Go%20Gen%207_Teaser%20Trailer_16x9_Clean.mp4"
+						autoplay
+						muted
+						loop
+					></video>
+				</div>
+			</div>
+		</header>
+		<main>
+			<section class="mainBanner">
+				<div class="bannerContainer">
+					<div class="bannerSide1">
+						<div class="infoBanner">
+							<div class="titleInfoBanner">
+								<img
+									src="https://lh3.googleusercontent.com/MxqAAjte5yQsQD0cC73SBVJuH6kX9F-fQ1X97VecyhGHGpixcT1ce7OftVuDufTSVIG_gY233437bOmw1AZFpg1Har4t5sP1jDo4GAX_so38dg=e365-w261"
+									alt=""
+								/>
+								<h2>Ловите покемонов</h2>
+								<h4>Отыщи своего приятеля!</h4>
+							</div>
+							<p>
+								Чтобы собирать покемонов, необязательно их ловить! Вы можете
+								выводить их из яиц и обмениваться с другими тренерами.
+							</p>
+						</div>
+					</div>
+					<div class="bannerSide2">
+						<img
+							src="https://lh3.googleusercontent.com/RGShDyVofSODXIJ0eQ9umAID8tCw9KdqBFrtgCEdrxjJijG1qZBryfECP9IRV1MOJhCk4Za4VYB34DE-hnPesZNNVYMwgHKs9KrNue3LNJRJuw=rw-e365-w2880"
+							alt=""
+						/>
+					</div>
+				</div>
+			</section>
+			<section class="pokemonList">
+				<div class="pokemonWrapper">
+					<div class="pokemonSectionTitle">
+						<h1>All Pokemons</h1>
+					</div>
+					<div class="container"></div>
+				</div>
+				<div class="buttons">
+					<button class="prev">Prev</button>
+					<span class="currentPage"></span>
+					/
+					<span class="allPages"></span>
+					<button class="next">Next</button>
+				</div>
+				<div class="selectPage">
+					<select name="select" id="select">
+						<option disabled selected>Choose</option>
+						<option id="name">name</option>
+						<option id="page">page</option>
+					</select>
+					<input type="text" class="pageInput" placeholder="Page Number" />
+					<button class="submit">Go</button>
+				</div>
+			</section>
+		</main>
+		<script src="./js/script.js"></script>
+	</body>
+</html>
